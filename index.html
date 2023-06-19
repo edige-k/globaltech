@@ -6,27 +6,33 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Global Tech</title>
 </head>
 <body>
 <main>
     <div class="banner">
-        <header>
-            <nav  class="header">
-                <div class="header__logo header__center">
-                    <img class="header__logo-svg" src="assets/css/images/background/logo.svg" alt="logo" />
+        <header class="header">
+            <div class="header__logo__icon">
+                <div class="header__logo  ">
+                    <img class="header__logo-svg" src="assets/images/background/logo.svg" alt="logo" />
                     <div class="header__logo-text">Global tech</div>
                 </div>
-                <div class="header__menu header__center">
-                    <div class="header__home">Home</div>
-                    <div class="header__showcase">Showcase</div>
-                    <div class="header__contact-us">Contact Us</div>
-                </div>
-                <button class="header__button">
-                   Get in Touch
-                </button>
+                <img class="header__icon" src="assets/images/icons/icon_hamburger.svg" onclick="header__icon()" alt="menu icon">
+            </div>
+
+            <nav  class="header__nav">
+                <ul id="header__menu" class="header__menu">
+                    <li class="header__menu__item">Home</li>
+                    <li class="header__menu__item">Showcase</li>
+                    <li class="header__menu__item">Contact Us</li>
+                    <li  class="header__menu__item"> <button class="header__button">
+                        Get in Touch
+                    </button></li>
+                </ul>
+
             </nav>
+
         </header>
         <div class="banner__content">
             <div class="banner__content__title">
@@ -48,47 +54,50 @@
             </button>
         </div>
         <div class="banner__dashboard">
-            <object data="assets/css/images/background/dashboard.svg" type="image/svg+xml"></object>
+            <object data="assets/images/background/dashboard.svg" ></object>
+        </div>
+        <div class="banner__dashboard__small">
+            <object data="assets/images/background/dashboard_small.svg" ></object>
         </div>
     </div>
     <div class="company__logo">
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-1.svg" alt="logo" />
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-2.svg" alt="logo" />
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-3.svg" alt="logo" />
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-4.svg" alt="logo" />
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-5.svg" alt="logo" />
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-6.svg" alt="logo" />
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-7.svg" alt="logo" />
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-8.svg" alt="logo" />
-        <img class="company__logo__svg" src="assets/css/images/logo/logo-9.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-1.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-2.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-3.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-4.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-5.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-6.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-7.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-8.svg" alt="logo" />
+        <img class="company__logo__svg" src="assets/images/logo/logo-9.svg" alt="logo" />
     </div>
     <div class="features">
             <div class="features__phone">
-                <object data="assets/css/images/figures/phone.svg" type="image/svg+xml"></object>
+                <object data="assets/images/figures/phone.svg" type="image/svg+xml"></object>
             </div>
             <div class="features__content">
                 <div class="features__content__first">
                     <p class="features__content__first__head"> /OUR FEATURES</p>
                     <h1 class="features__content__first__title">The Answer To Your Business Needs</h1>
-                    <p class="features__content__first__head"> Make your business processes more efficient and avoid mistakes in the payroll process through automation.</p>
+                    <p class="features__content__first__text"> Make your business processes more efficient and avoid mistakes in the payroll process through automation.</p>
                 </div>
                 <div class="features__content__second">
                     <div class="features__content__second__item">
-                        <img class="features__icon__svg" src="assets/css/images/icons/icon_hat.svg" alt="icon" />
+                        <img class="features__icon__svg" src="assets/images/icons/icon_hat.svg" alt="icon" />
                         <div class="features__content__second__item__text">
                             <h4>Contrary to popular belief</h4>
                             <p>Latin literature from 45 BC to popular belief, Lorem.</p>
                         </div>
                     </div>
                     <div class="features__content__second__item">
-                        <img class="features__icon__svg" src="assets/css/images/icons/icon_grow.svg" alt="icon" />
+                        <img class="features__icon__svg" src="assets/images/icons/icon_grow.svg" alt="icon" />
                         <div class="features__content__second__item__text">
                             <h4>The standard Lorem Ipsum passage</h4>
                             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
                         </div>
                     </div>
                     <div class="features__content__second__item">
-                        <img class="features__icon__svg" src="assets/css/images/icons/icon_hat.svg" alt="icon" />
+                        <img class="features__icon__svg" src="assets/images/icons/icon_hat.svg" alt="icon" />
                         <div class="features__content__second__item__text">
                             <h4>Sed ut perspiciatis unde omnis</h4>
                             <p>If you use this site regularly and would like to help keep the site on the Internet.</p>
@@ -106,35 +115,35 @@
                     in The World
                 </h1>
             </div>
-            <p class="statistics__content_text">
+            <p class="statistics__content_text_2">
                 Global tech makes it easier for all businesses and companies
                 to be able to continue to grow.
             </p>
         </div>
         <div class="statistics__content__icons">
             <div class="statistics__content__icons__item">
-             <img class="statistics__icon__svg" src="assets/css/images/icons/icon_people.svg" alt="icon" />
+             <img class="statistics__icon__svg" src="assets/images/icons/icon_people.svg" alt="icon" />
             <div class="statistics__content__second__item__text">
                 <h1>1M+</h1>
                 <p class="statistics__content__second__item__text__small">happy clients</p>
             </div>
             </div>
             <div class="statistics__content__icons__item">
-                <img class="statistics__icon__svg" src="assets/css/images/icons/icon_circle.svg" alt="icon" />
+                <img class="statistics__icon__svg" src="assets/images/icons/icon_circle.svg" alt="icon" />
                 <div class="statistics__content__second__item__text">
                     <h1>300</h1>
                     <p class="statistics__content__second__item__text__small">successful deals</p>
                 </div>
             </div>
             <div class="statistics__content__icons__item">
-                <img class="statistics__icon__svg" src="assets/css/images/icons/icon_grow2.svg" alt="icon" />
+                <img class="statistics__icon__svg" src="assets/images/icons/icon_grow2.svg" alt="icon" />
                 <div class="statistics__content__second__item__text">
                     <h1>15%</h1>
                     <p class="statistics__content__second__item__text__small">profit per yea</p>
                 </div>
             </div>
             <div class="statistics__content__icons__item">
-                <img class="statistics__icon__svg" src="assets/css/images/icons/icon_suitcase.svg" alt="icon" />
+                <img class="statistics__icon__svg" src="assets/images/icons/icon_suitcase.svg" alt="icon" />
                 <div class="statistics__content__second__item__text">
                     <h1>179</h1>
                     <p class="statistics__content__second__item__text__small">active investors</p>
@@ -150,42 +159,42 @@
             </div>
             <div class="data-analysis__content__second">
                 <div class="data-analysis__content__second__item">
-                    <img class="data-analysis__icon__svg" src="assets/css/images/icons/icon_1.svg" alt="icon" />
+                    <img class="data-analysis__icon__svg" src="assets/images/icons/icon_1.svg" alt="icon" />
                     <div class="data-analysis__content__second__item__text">
                         <h4>Analysis and Planning.</h4>
                         <p>Once a customer or stakeholder has requested a project, the first step of the SDLC is planning.</p>
                     </div>
                 </div>
                 <div class="data-analysis__content__second__item">
-                    <img class="data-analysis__icon__svg" src="assets/css/images/icons/icon_2.svg" alt="icon" />
+                    <img class="data-analysis__icon__svg" src="assets/images/icons/icon_2.svg" alt="icon" />
                     <div class="data-analysis__content__second__item__text">
                         <h4>Requirements.</h4>
                         <p>Contrary to popular belief, Lorem Ipsum is not simply.</p>
                     </div>
                 </div>
                 <div class="data-analysis__content__second__item">
-                    <img class="data-analysis__icon__svg" src="assets/css/images/icons/icon_3.svg" alt="icon" />
+                    <img class="data-analysis__icon__svg" src="assets/images/icons/icon_3.svg" alt="icon" />
                     <div class="data-analysis__content__second__item__text">
                         <h4>Design and Prototyping.</h4>
                         <p>The generated Lorem Ipsum is therefore.</p>
                     </div>
                 </div>
                 <div class="data-analysis__content__second__item">
-                    <img class="data-analysis__icon__svg" src="assets/css/images/icons/icon_4.svg" alt="icon" />
+                    <img class="data-analysis__icon__svg" src="assets/images/icons/icon_4.svg" alt="icon" />
                     <div class="data-analysis__content__second__item__text">
                         <h4>Software Development.</h4>
                         <p>This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
                     </div>
                 </div>
                 <div class="data-analysis__content__second__item">
-                    <img class="data-analysis__icon__svg" src="assets/css/images/icons/icon_5.svg" alt="icon" />
+                    <img class="data-analysis__icon__svg" src="assets/images/icons/icon_5.svg" alt="icon" />
                     <div class="data-analysis__content__second__item__text">
                         <h4>Testing.</h4>
                         <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>
                     </div>
                 </div>
                 <div class="data-analysis__content__second__item">
-                    <img class="data-analysis__icon__svg" src="assets/css/images/icons/icon_6.svg" alt="icon" />
+                    <img class="data-analysis__icon__svg" src="assets/images/icons/icon_6.svg" alt="icon" />
                     <div class="data-analysis__content__second__item__text">
                         <h4>Deployment.</h4>
                         <p>Once a customer or stakeholder has requested a project, the first step of the SDLC is planning.</p>
@@ -194,11 +203,10 @@
             </div>
         </div>
         <div class="data-analysis__svg">
-            <object data="assets/css/images/figures/analysis.svg" type="image/svg+xml"></object>
+            <object data="assets/images/figures/analysis.svg" type="image/svg+xml"></object>
         </div>
 
     </div>
-
     <div class="contact__footer" >
     <div class="contact">
         <div class="contact__content">
@@ -208,34 +216,34 @@
             </div>
             <div class="contact__content__second">
                 <div class="contact__content__second__item">
-                    <img class="contact__icon__svg" src="assets/css/images/icons/icon_phone.svg" alt="icon" />
+                    <img class="contact__icon__svg" src="assets/images/icons/icon_phone.svg" alt="icon" />
                     <div class="contact__content__second__item__text">
                         <h4>Phone.</h4>
                         <p>+(0712) 876 76 888</p>
                     </div>
                 </div>
                 <div class="contact__content__second__item">
-                    <img class="contact__icon__svg" src="assets/css/images/icons/icon_location.svg" alt="icon" />
+                    <img class="contact__icon__svg" src="assets/images/icons/icon_location.svg" alt="icon" />
                     <div class="contact__content__second__item__text">
                         <h4>Location.</h4>
                         <p>3457 Tel Aviv,Israel</p>
                     </div>
                 </div>
                 <div class="contact__content__second__item">
-                    <img class="contact__icon__svg" src="assets/css/images/icons/icon_email.svg" alt="icon" />
+                    <img class="contact__icon__svg" src="assets/images/icons/icon_email.svg" alt="icon" />
                     <div class="contact__content__second__item__text">
                         <h4>Email.</h4>
                         <p>info@Globaltech</p>
                     </div>
                 </div>
                 <div class="contact__content__second__item">
-                    <img class="contact__icon__svg" src="assets/css/images/icons/icon_messenger.svg" alt="icon" />
+                    <img class="contact__icon__svg" src="assets/images/icons/icon_messenger.svg" alt="icon" />
                     <div class="contact__content__second__item__text">
                         <h4>Messenger.</h4>
                         <div class="contact__content__second__item__icons">
-                            <img class="contact__content__second__item__icon__svg" src="assets/css/images/icons/icon_telegram.svg" alt="icon" />
-                            <img class="contact__content__second__item__icon__svg" src="assets/css/images/icons/icon_whatsapp.svg" alt="icon" />
-                            <img class="contact__content__second__item__icon__svg" src="assets/css/images/icons/icon_facebook.svg" alt="icon" />
+                            <img class="contact__content__second__item__icon__svg" src="assets/images/icons/icon_telegram.svg" alt="icon" />
+                            <img class="contact__content__second__item__icon__svg" src="assets/images/icons/icon_whatsapp.svg" alt="icon" />
+                            <img class="contact__content__second__item__icon__svg" src="assets/images/icons/icon_facebook.svg" alt="icon" />
 
                         </div>
                     </div>
@@ -269,6 +277,17 @@
     </div>
 </main>
 
+<script>
+    var header__menu = document.getElementById("header__menu")
+    header__menu.style.display = "none";
 
+    function header__icon() {
+        if (header__menu.style.display === "none") {
+            header__menu.style.display = "flex";
+        } else {
+            header__menu.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
