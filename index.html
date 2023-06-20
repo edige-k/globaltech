@@ -278,16 +278,19 @@
 </main>
 
 <script>
-    var header__menu = document.getElementById("header__menu")
-    header__menu.style.display = "none";
-
+    var headerMenu = document.getElementById("header__menu")
+    updateMenuDisplay();
     function header__icon() {
-        if (header__menu.style.display === "none") {
-            header__menu.style.display = "flex";
+        headerMenu.style.display = headerMenu.style.display === "none" ? "flex" : "none";
+    }
+    function updateMenuDisplay() {
+        if (window.innerWidth <= 768) {
+            headerMenu.style.display = "none";
         } else {
-            header__menu.style.display = "none";
+            headerMenu.style.display = "flex";
         }
     }
+    window.addEventListener("resize", updateMenuDisplay);
 </script>
 </body>
 </html>

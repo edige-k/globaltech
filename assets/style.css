@@ -97,7 +97,7 @@ body {
 
 .banner__buttons button {
     border: none;
-    margin: 30px;
+    margin: 30px 30px 50px 30px;
     border-radius: 6px;
     width: 170px;
     height: 40px;
@@ -149,7 +149,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url('images/background/vector2.svg');
+    background-image: url('images/background/vector1.svg');
     background-repeat: no-repeat;
     padding: 100px;
 }
@@ -189,6 +189,9 @@ body {
     display: flex;
     gap: 15px;
     margin-top: -10px;
+}
+.features__phone object{
+    width: 80%;
 }
 /*-------------------------------------------------------------------------------------------*/
 
@@ -375,11 +378,10 @@ body {
     border-color: #7758f6;
 }
 .contact__form__textarea {
-    width: 96%;
-    width: 96%;
-    height: 200px;
-    height: 50px;
-
+    min-width: 96%;
+    max-width: 96%;
+    min-height: 60px;
+    max-height: 200px;
     margin: 10px 0 10px;
     border-radius: 6px;
     border: solid 1px gray;
@@ -594,7 +596,6 @@ body {
         display: flex;
         gap: 20px;
         width: 100%;
-
     }
     .contact__content__second__item__text h4{
         display: flex;
@@ -607,7 +608,8 @@ body {
         width: 92%;
     }
     .contact__form__textarea{
-        width: 92%;
+        min-width: 92%;
+        max-width: 92%;
     }
     .contact__form__button{
         margin-top: 20px;
