@@ -53,7 +53,7 @@ body {
 }
 
 .header__logo-text {
-    width: 90px;
+
     margin: auto;
 }
 
@@ -78,6 +78,7 @@ body {
 .banner{
     font-family: var(--font-family);
     background-image: url('images/background/background_main.svg');
+    background-position: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -97,12 +98,16 @@ body {
 }
 
 .banner__content_text{
+    color: rgb(255 255 255 / 80%);
     font-weight: normal;
 }
-
+.banner__buttons{
+    display: flex;
+    gap: 35px;
+}
 .banner__buttons button {
     border: none;
-    margin: 30px 30px 50px 30px;
+    margin: 30px 0 50px 0;
     border-radius: 6px;
     width: 170px;
     height: 40px;
@@ -131,6 +136,11 @@ body {
 .banner__dashboard__small object{
     display: none;
 }
+.banner__dashboard object{
+    width: 65%;
+    display: flex;
+    margin: auto;
+}
 /*-------------------------------------------------------------------------------------------*/
 
 .company__logo {
@@ -155,11 +165,12 @@ body {
     align-items: center;
     flex-wrap: wrap;
     background-image: url('images/background/vector1.svg');
+
     background-repeat: no-repeat;
     padding: 100px;
 }
 .features__content{
-    width: 440px;
+    width: 460px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,12 +181,14 @@ body {
     font-weight: normal;
 }
 .features__content__first__text{
+    width: 80%;
     font-weight: normal;
 }
 .features__content__first__title{
-
+    width: 80%;
     color: black;
 }
+
 .features__content__second{
     flex-direction: column;
     display: flex;
@@ -196,7 +209,7 @@ body {
     margin-top: -14px;
 }
 .features__phone object{
-    width: 80%;
+    width: 90%;
 }
 /*-------------------------------------------------------------------------------------------*/
 
@@ -210,6 +223,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     background-image: url('images/background/background_statistics.svg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -222,14 +236,16 @@ body {
     margin: auto;
 }
 .statistics__content_text{
+    color: rgb(255 255 255 / 80%);
     font-weight: normal;
     width: 60%;
     margin: auto;
 }
 
 .statistics__content_text_2{
+    color: rgb(255 255 255 / 80%);
     font-weight: normal;
-    width: 60%;
+    width: 75%;
     margin: auto;
 }
 .statistics__content__icons{
@@ -244,6 +260,7 @@ body {
     gap: 20px;
 }
 .statistics__content__second__item__text__small{
+    color: rgb(255 255 255 / 80%);
     margin-top: -14px;
     font-weight: normal
 }
@@ -259,11 +276,11 @@ body {
     flex-wrap: wrap;
     background-image: url('images/background/vector4.svg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right top;
 }
 
 .data-analysis__content {
-    width: 440px;
+    width: 460px;
     display: flex;
     justify-content: center;
 
@@ -271,9 +288,7 @@ body {
     align-items: flex-start
 }
 
-.data-analysis__content__first {
-    width: 330px;
-}
+
 
 .data-analysis__content__first__head {
     font-weight: normal;
@@ -301,7 +316,8 @@ body {
 /*-------------------------------------------------------------------------------*/
 .main{
     font-family: var(--font-family);
-    background-image: url('images/background/background_main.svg');
+    background-image: url('images/background/background_main2.svg');
+    background-position: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -316,13 +332,14 @@ body {
     margin-bottom: 60px;
 }
 .main__page__title{
-    width: 500px;
+    width: 430px;
     margin: 0 auto;
     text-align: center;
 }
 
 .main__page__text{
     font-weight: normal;
+    color: rgb(255 255 255 / 80%);
 }
 /*---------------------------------------------------------------------------*/
 .case-study{
@@ -338,7 +355,7 @@ body {
 }
 
 .case-study__content {
-    width: 440px;
+    width: 460px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -349,7 +366,7 @@ body {
 
 }
 .case-study__content__first {
-    width: 330px;
+    width: 350px;
     display: flex;
     flex-direction: column
 }
@@ -359,6 +376,7 @@ body {
 }
 
 .case-study__content__first__title {
+    margin-top: 0;
     color: black;
 }
 
@@ -405,11 +423,12 @@ body {
     background-size: cover;
     background-image: url('images/background/background_case_study2.svg');
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .case-study__2__content {
     margin-top: -20px;
-    width: 440px;
+    width: 460px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -424,7 +443,7 @@ body {
     gap: 50px;
 }
 .case-study__2__content__first {
-    width: 330px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     margin-right: 110px;
@@ -436,6 +455,7 @@ body {
 
 .case-study__2__content__first__title {
     margin-top: 0;
+
     color: black;
 }
 
@@ -450,7 +470,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: -10px;
+    margin-top: 0;
 }
 .case-study__2__content__text{
     font-weight: normal;
@@ -480,7 +500,7 @@ body {
 }
 
 .case-study__3__content {
-    width: 440px;
+    width: 460px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -491,7 +511,7 @@ body {
 
 }
 .case-study__3__content__first {
-    width: 330px;
+    width: 350px;
     display: flex;
     flex-direction: column
 }
@@ -501,6 +521,7 @@ body {
 }
 
 .case-study__3__content__first__title {
+    margin-top: 0;
     color: black;
 }
 
@@ -536,6 +557,7 @@ body {
 
 .contact__footer{
     background-image: url('images/background/background_contact.svg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -560,6 +582,7 @@ body {
     margin-bottom: 20px; /* Adjust the margin as needed */
 }
 .contact__content__second__item__text p {
+    color: rgb(255 255 255 / 80%);
     font-weight: normal;
     margin-top: -14px;
 }
@@ -570,6 +593,7 @@ body {
     margin-top: -14px;
 }
 .footer__content {
+    color: rgb(255 255 255 / 80%);
     border-top: 1px solid gray;
     width: 66%;
     margin: auto;
@@ -603,6 +627,7 @@ body {
     font-size: 22px;
 }
 .contact__content__first__head{
+    color: rgb(255 255 255 / 80%);
     font-weight: normal;
 }
 .contact__form__input{
@@ -648,7 +673,9 @@ body {
 /*-------------------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 768px) {
-
+    :root{
+        font-size: 15px;
+    }
     .header {
         width: 90%;
         margin-left: 15px;
@@ -691,14 +718,14 @@ body {
 
     /*-------------------------------------------------------------------------------------------*/
     .banner {
-        font-size: 14px;
+        
         align-items: center;
         height: auto;
         text-align: center;
     }
 
     .banner__content__title {
-        width: auto;
+        width: 85%;
         margin: 0 auto;
 
     }
@@ -710,27 +737,30 @@ body {
     }
 
     .banner__buttons {
+
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 80%;
         margin: 20px;
     }
 
     .banner__buttons button {
         width: 100%;
-        margin: 10px;
+        margin: 10px 0 10px 0;
     }
 
     .banner__dashboard object {
         display: none;
+
     }
 
-    .banner__dashboard__small {
-        margin-left: 30px;
-    }
+
 
     .banner__dashboard__small object {
-
+        width: 100%;
         display: block;
-        width: 100%; /* Set the desired width */
-        height: 100%; /* Set the desired height */
+
     }
 
     /*-------------------------------------------------------------------------------------------*/
@@ -740,6 +770,7 @@ body {
         padding: 30px 0 0 0;
     }
     .features__content__first__title{
+        width: 90%;
         margin: auto;
         text-align: center;
     }
@@ -753,17 +784,27 @@ body {
     }
 
     .features__content {
-        font-size: 14px;
-        width: 80%;
+        
+        width: 90%;
     }
-
+    .features__content__first__text{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .features__phone{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
     /*-------------------------------------------------------------------------------------------*/
     .statistics {
-        font-size: 14px;
+        
         padding: 30px 0 0 0;
     }
 
     .statistics__content_text {
+
         display: none;
     }
 
@@ -793,9 +834,13 @@ body {
     }
     /*-------------------------------------------*/
     .data-analysis{
-        font-size: 14px;
+        
         padding: 30px 0 0 0;
 
+    }
+    .data-analysis__content{
+        display: flex;
+        align-items: center;
     }
     .data-analysis__content__first__head{
         display: none;
@@ -811,19 +856,25 @@ body {
     .data-analysis__content__second__item img{
         width: 50px;
     }
+    .data-analysis__svg{
+        display: flex;
+        justify-content: center;
+    }
     .data-analysis__svg object{
-        margin: 20px 0 20px 0 ;
+        margin: 20px 0 40px 0 ;
 
         width: 80%;
     }
     /*----------------------------------------------------------------------------------------------*/
     .main {
-        font-size: 14px;
+        
         align-items: center;
         height: auto;
         text-align: center;
     }
-
+    .main__page{
+        width: 90%;
+    }
     .main__page__title {
         width: auto;
         margin: 0 auto;
@@ -837,7 +888,7 @@ body {
     }
     /*----------------------------------------------------------------------------------------*/
     .case-study{
-        font-size: 14px;
+        
         padding: 30px 0 0 0;
 
     }
@@ -851,16 +902,19 @@ body {
         order: 2;
 
     }
-    .case-study__content__first{
+    .case-study__content__first {
+        width: 75%;
         margin: auto;
     }
     .case-study__svg {
         order: 1;
     }
     .case-study__svg object{
-        width: 80%;
+        display: flex;
+        width: 90%;
+        margin: auto;
         text-align: center;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
     .case-study__content__text  {
         width: 90%;
@@ -888,7 +942,7 @@ body {
     }
     /*---------------------------------------------------------*/
     .case-study__2{
-        font-size: 14px;
+        
         padding: 30px 0 0 0;
 
     }
@@ -902,7 +956,7 @@ body {
         order: 2;
         margin-bottom: 40px;
     }
-    .case-study__2__content__first{
+    .case-study__2__content__first {
         display: none;
         margin: auto;
     }
@@ -913,7 +967,7 @@ body {
     }
     .case-study__2__svg object{
 
-        width: 80%;
+        width: 90%;
         text-align: center;
 
     }
@@ -946,7 +1000,7 @@ body {
     }
     /*------------------------------------------------------*/
     .case-study__3{
-        font-size: 14px;
+        
         margin-top: 0;
 
     }
@@ -960,16 +1014,19 @@ body {
         order: 2;
         margin-bottom: 40px;
     }
-    .case-study__3__content__first{
+    .case-study__3__content__first {
+        width: 90%;
         margin: auto;
     }
     .case-study__3__svg {
         order: 1;
     }
     .case-study__3__svg object{
-        width: 80%;
+        display: flex;
+        width: 90%;
+        margin: auto;
         text-align: center;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
     .case-study__3__content__text  {
         width: 90%;
@@ -997,8 +1054,7 @@ body {
     }
 /* -----------------------------------------------------------------------------------   */
     .contact{
-
-        font-size: 14px;
+        margin-top: 20px;
         padding: 30px 0 0 0;
     }
     .contact__content{
@@ -1022,12 +1078,16 @@ body {
     .contact__content__second__item__text h4{
         display: flex;
     }
+
     .contact__form{
         width: 80%;
         padding: 15px 15px 35px;
     }
     .contact__form__input{
         width: 92%;
+    }
+    .contact__form__title{
+        font-size: 17px;
     }
     .contact__form__textarea{
         min-width: 92%;
@@ -1037,7 +1097,7 @@ body {
         margin-top: 20px;
     }
     .footer__content{
-        font-size: 14px;
+        
         margin-top: 65px;
         width: 100%;
         height: 80%;
